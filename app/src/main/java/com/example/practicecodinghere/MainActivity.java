@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Log.w(tag, "This is a warn log");
         Log.e(tag, "This is an error log");
 
-        Button button = (Button) findViewById(R.id.button);
+        Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
