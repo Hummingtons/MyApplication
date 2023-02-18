@@ -9,8 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.myapplication.R;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -30,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(tag, "Button Clicked");
+
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
             }
         });
 
-        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        startActivity(intent);
     }
 }
