@@ -9,28 +9,37 @@
 
     <TextView
         android:id="@+id/textView"
+        android:layout_width="417dp"
+        android:layout_height="56dp"
+        android:background="#673AB7"
+        android:text="Hello Student 1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/editTextTo4"
         android:layout_width="match_parent"
         android:layout_height="78dp"
-        android:text="Hello World!"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        android:typeface="normal" />
+        android:ems="10"
+        android:hint="To"
+        android:inputType="textPersonName" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <EditText
+        android:id="@+id/editTextSubject4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:srcCompat="@drawable/ic_launcher_background" />
+        android:layout_height="78dp"
+        android:ems="10"
+        android:hint="Subject"
+        android:inputType="textPersonName" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <EditText
+        android:id="@+id/editTextMessage4"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:text="This is the first Activity"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:typeface="normal" />
+        android:layout_height="278dp"
+        android:ems="10"
+        android:hint="Message"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/button"
@@ -39,7 +48,7 @@
         android:layout_marginStart="161dp"
         android:layout_marginTop="43dp"
         android:layout_marginEnd="156dp"
-        android:text="Button"
+        android:text="Send"
         android:textSize="12sp" />
 
 </LinearLayout>
