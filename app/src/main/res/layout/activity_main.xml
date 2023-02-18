@@ -8,47 +8,61 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="417dp"
+        android:id="@+id/textView6"
+        android:layout_width="440dp"
         android:layout_height="56dp"
         android:background="#673AB7"
         android:text="Hello Student 1"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="34sp" />
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTo4"
+        android:id="@+id/editTextTo5"
         android:layout_width="match_parent"
         android:layout_height="78dp"
+        android:layout_marginTop="5dp"
         android:ems="10"
         android:hint="To"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextSubject4"
+        android:id="@+id/editTextSubject5"
         android:layout_width="match_parent"
         android:layout_height="78dp"
+        android:layout_marginTop="34dp"
         android:ems="10"
         android:hint="Subject"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTo3" />
 
     <EditText
-        android:id="@+id/editTextMessage4"
+        android:id="@+id/editTextMessage5"
         android:layout_width="match_parent"
-        android:layout_height="278dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="Message"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSubject3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="156dp"
+        android:layout_marginStart="301dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:text="Send"
-        android:textSize="12sp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMessage3" />
 </LinearLayout>
