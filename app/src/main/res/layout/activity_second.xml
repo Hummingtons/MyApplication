@@ -25,8 +25,8 @@
         android:layout_above="@id/editTextMessage"
         android:layout_below="@+id/textView2"
         android:layout_alignBottom="@id/textView2"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="-95dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="-83dp"
         android:ems="10"
         android:hint="To"
         android:inputType="textPersonName" />
@@ -48,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="302dp"
         android:layout_alignBottom="@id/textView2"
-        android:layout_marginBottom="-510dp"
+        android:layout_marginBottom="-526dp"
         android:ems="10"
         android:hint="Message"
         android:inputType="textPersonName" />
@@ -59,8 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="309dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginBottom="90dp"
         android:text="Send" />
 
 </RelativeLayout>

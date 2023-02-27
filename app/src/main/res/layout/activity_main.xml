@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="440dp"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="#673AB7"
         android:text="Hello Student 1"
@@ -42,16 +42,15 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTo3" />
 
     <EditText
-        android:id="@+id/editTextMessage5"
+        android:id="@+id/editTextSubject2"
         android:layout_width="match_parent"
-        android:layout_height="173dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="302dp"
+        android:layout_marginTop="34dp"
         android:ems="10"
         android:hint="Message"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSubject3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTo3" />
 
     <Button
         android:id="@+id/button4"
@@ -65,4 +64,5 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextMessage3" />
+
 </LinearLayout>
