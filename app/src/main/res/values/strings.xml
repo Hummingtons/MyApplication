@@ -20,11 +20,11 @@
         <item>Widget</item>
     </string-array>
 
-    <string-array name="Lista">
-        <item>This</item>
-        <item>Is</item>
-        <item>A</item>
-        <item>Spinner</item>
-        <item>Widget</item>
+    <string-array name="Names">
+        <item>Jose</item>
+        <item>Juan</item>
+        <item>Maria</item>
+        <item>Pedro</item>
+        <item>Penduko</item>
     </string-array>
 </resources>

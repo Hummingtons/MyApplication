@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Spinner;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -21,7 +20,7 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list);
 
         listView=(ListView)findViewById(R.id.listView);
-        listItem=getResources().getStringArray(R.array.Lists);
+        listItem=getResources().getStringArray(R.array.Names);
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, listItem);
