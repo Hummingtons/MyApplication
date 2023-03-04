@@ -11,4 +11,20 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_third">activity_third</string>
     <string name="title_activity_main2">MainActivity2</string>
+
+    <string-array name="Lists">
+        <item>This</item>
+        <item>Is</item>
+        <item>A</item>
+        <item>Spinner</item>
+        <item>Widget</item>
+    </string-array>
+
+    <string-array name="Lista">
+        <item>This</item>
+        <item>Is</item>
+        <item>A</item>
+        <item>Spinner</item>
+        <item>Widget</item>
+    </string-array>
 </resources>
