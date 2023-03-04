@@ -20,7 +20,7 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list);
 
         listView=(ListView)findViewById(R.id.listView);
-        listItem=getResources().getStringArray(R.array.Names);
+        listItem=getResources().getStringArray(R.array.prog_lang);
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, listItem);

@@ -12,19 +12,26 @@
     <string name="title_activity_third">activity_third</string>
     <string name="title_activity_main2">MainActivity2</string>
 
-    <string-array name="Lists">
-        <item>This</item>
-        <item>Is</item>
-        <item>A</item>
-        <item>Spinner</item>
-        <item>Widget</item>
+    <string-array name="spinner_array">
+        <item>Select a robot..</item>
+        <item>R2-D2</item>
+        <item>BB-8</item>
+        <item>C-3PO</item>
+        <item>Dalek</item>
+        <item>Robbie</item>
+        <item>Gart</item>
+        <item>Optimus Prime</item>
+        <item>Android 17</item>
+        <item>Android 18</item>
+
     </string-array>
 
-    <string-array name="Names">
-        <item>Jose</item>
-        <item>Juan</item>
-        <item>Maria</item>
-        <item>Pedro</item>
-        <item>Penduko</item>
+    <string-array name="prog_lang">
+        <item>Java</item>
+        <item>C</item>
+        <item>C#</item>
+        <item>C++</item>
+        <item>Kotlin</item>
+        <item>JavaScript</item>
     </string-array>
 </resources>
