@@ -27,10 +27,8 @@ public class MainActivity1 extends AppCompatActivity {
                         .setReorderingAllowed(true)
                         .addToBackStack("name") // name can be null
                         .commit();
-
             }
         });
-
         btnA2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
