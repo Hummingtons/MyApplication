@@ -7,44 +7,48 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import org.jetbrains.annotations.Nullable;
 
 public class PizzaDetailFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public PizzaDetailFragment() {
-        // Required empty public constructor
-    }
-
-    public static PizzaDetailFragment newInstance(String param1, String param2) {
-        PizzaDetailFragment fragment = new PizzaDetailFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    int position = 0;
+    TextView tvTitle;
+    TextView tvDetails;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+
+        if(savedInstanceState == null){
+            // Get back arguments
+            if(getArguments() != null) {
+                position = getArguments().getInt("position", 0);
+            }
         }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pizza_detail, container, false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup parent, @Nullable Bundle savedInstanceState) {
+
+        // Inflate the xml file for the fragment
+        return inflater.inflate(R.layout.fragment_pizza_detail, parent, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        // Set values for view here
+        tvTitle = (TextView) view.findViewById(R.id.tvTitle);
+        tvDetails = (TextView) view.findViewById(R.id.tvDetails);
+
+        // update view
+        tvTitle.setText(Pizza.pizzaMenu[position]);
+        tvDetails.setText(Pizza.pizzaDetails[position]);
+    }
+
+    // Activity is calling this to update view on Fragment
+    public void updateView(int position){
+        tvTitle.setText(Pizza.pizzaMenu[position]);
+        tvDetails.setText(Pizza.pizzaDetails[position]);
     }
 }

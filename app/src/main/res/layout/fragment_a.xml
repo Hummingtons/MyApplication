@@ -10,7 +10,9 @@
         android:id="@+id/txt_a"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#2196F3"
-        android:text="@string/hello_blank_fragment" />
+        android:background="#9C27B0"
+        android:text="Second Fragment"
+        android:textAlignment="center"
+        android:textAllCaps="true" />
 
 </FrameLayout>
