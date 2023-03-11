@@ -1,6 +1,7 @@
 package com.example.practicecodinghere;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 
 import android.content.Intent;
@@ -34,7 +35,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
 }
