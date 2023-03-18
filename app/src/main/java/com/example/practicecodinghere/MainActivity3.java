@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
+
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -42,7 +42,7 @@ public class MainActivity3 extends AppCompatActivity {
                 break;
             case R.id.refresh:
                 DialogFragment dialogFragment = new DialogFragment();
-                dialogFragment.show(getSupportFragmentManager(),"My Fragment");
+                dialogFragment.show(getSupportFragmentManager(),"Not Fragment");
                 break;
             case R.id.copy:
                 Toast.makeText(this, "Copy Clicked", Toast.LENGTH_SHORT).show();
@@ -57,7 +57,7 @@ public class MainActivity3 extends AppCompatActivity {
                 setMessage("You are in failing!");
         builder.setPositiveButton("I know!", new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialog, int which) {
+            public void onClick(DialogInterface dialog, int id) {
 
             }
         });
