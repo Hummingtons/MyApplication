@@ -23,7 +23,7 @@ public class MainActivity3 extends AppCompatActivity {
         actionBar.setTitle("GFG | Action Bar");
         actionBar.setSubtitle(" Design a custom Action Bar");
 
-        actionBar.setIcon(R.drawable.png_icon);
+        actionBar.setIcon(R.drawable.ic_launcher_background);
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
     }

@@ -8,6 +8,7 @@
         android:orderInCategory="101"
         app:showAsAction="ifRoom"
         android:icon="@drawable/search_icon"/>
+
     <!-- action button for refresh -->
     <item android:title="refresh"
         android:id="@+id/refresh"
